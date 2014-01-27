@@ -1,0 +1,25 @@
+{
+  "name": "tempus-www",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.8",
+    "jade": "*"
+  },
+  "description": "tempus-www ==========",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/t3mpus/tempus-www.git"
+  },
+  "author": "Will S. Laurance",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/t3mpus/tempus-www/issues"
+  },
+  "homepage": "https://github.com/t3mpus/tempus-www"
+}
