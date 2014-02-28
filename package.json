@@ -9,7 +9,8 @@
     "express": "3.4.8",
     "jade": "*",
     "coffee-script": "^1.7.1",
-    "connect-assets": "^3.0.0-beta1"
+    "connect-assets": "^3.0.0-beta1",
+    "less": "^1.7.0"
   },
   "description": "tempus-www ==========",
   "main": "app.js",
