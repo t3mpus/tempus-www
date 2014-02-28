@@ -9,6 +9,8 @@ http = require("http")
 path = require("path")
 app = express()
 
+app.locals.title = "Tempus"
+
 # all environments
 app.set "port", process.env.PORT or 3000
 app.set "views", path.join(__dirname, "views")
