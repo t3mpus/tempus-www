@@ -1,5 +1,12 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div.row
+    p.well.lead.text-center Tempus is a time tracking service used to create, edit,
+      | and share time records.
+
+  div.row
+    img.lead(src="http://placehold.it/900x300", width="100%")
+
+  div.row
+    include includes/plans
