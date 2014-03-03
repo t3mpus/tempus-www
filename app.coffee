@@ -26,6 +26,8 @@ app.use "/assets", express.static(path.join(__dirname, "assets"))
 app.use express.errorHandler()  if "development" is app.get("env")
 app.get "/", routes.index
 
+require("./routes/sign") app
+
 app.use app.router
 
 app.use (req, res, next) ->

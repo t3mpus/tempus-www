@@ -1,0 +1,12 @@
+extends ../layout
+
+block content
+  form(method='post', action="#{action}", role="form")
+    -for input in inputs
+      .form-group
+        label(for="#{input.id}")= input.text || 'text'
+        input.form-control(id="#{input.id}", type="#{input.type}",
+                           placeholder="#{input.placeholder || input.text}")
+
+    button.btn.btn-default(type="submit")= submit
+
