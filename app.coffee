@@ -20,6 +20,9 @@ app.use express.logger("dev")
 app.use express.json()
 app.use express.urlencoded()
 app.use express.methodOverride()
+app.use express.cookieParser()
+app.use express.session(secret: 'keyboard cat')
+app.use require('connect-flash')()
 app.use require('connect-assets') helperContext: app.locals
 app.use "/assets", express.static(path.join(__dirname, "assets"))
 

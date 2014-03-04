@@ -31,3 +31,11 @@ module.exports = (app, passport) ->
   app.get '/sign/out', (req, res)->
     res.render '/sign/out'
 
+
+  app.post '/sign/in', passport.authenticate('local',
+    {
+      successRedirect: '/workspace'
+      failureRedirect: '/sign/in'
+      failureFlash: yes
+    }
+  )
