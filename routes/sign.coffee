@@ -1,4 +1,4 @@
-module.exports = (app) ->
+module.exports = (app, passport) ->
 
   password = {id: 'password', text: 'Password', type: 'password'}
   email = {id: 'email', text: 'Email', type: 'email'}
@@ -27,7 +27,6 @@ module.exports = (app) ->
       inputs: up_inputs
       action: '/sign/up'
       submit: 'Sign Up!'
-
 
   app.get '/sign/out', (req, res)->
     res.render '/sign/out'

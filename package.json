@@ -10,7 +10,9 @@
     "jade": "*",
     "coffee-script": "^1.7.1",
     "connect-assets": "^3.0.0-beta1",
-    "less": "^1.7.0"
+    "less": "^1.7.0",
+    "passport-local": "^0.1.6",
+    "passport": "^0.2.0"
   },
   "description": "tempus-www ==========",
   "main": "app.js",
