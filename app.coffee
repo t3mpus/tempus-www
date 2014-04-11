@@ -31,7 +31,8 @@ require("./routes/sign") app
 app.use app.router
 
 app.use (req, res, next) ->
-  res.render 404
+  res.render 404, (err, html)->
+    res.send 404, html
 
 http.createServer(app).listen app.get("port"), ->
   console.log "Express server listening on port " + app.get("port")
